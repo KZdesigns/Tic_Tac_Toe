@@ -4,6 +4,8 @@ Creating a Tic-Tac-Toe game, uisng the ruby programing langauge. I will be build
 - [ ] Version 2 - Dynamic sized grid with 2 or more human players
 - [ ] Version 3 - Dynamic sized grid with 2 or more human or computer players
 
+![tic-tac-toe-image](/images/tic-tac-toe-image.jpg)
+
 ### Version 1: Make it work
 Version 1: Make it work
 Gene design: for simplicity, in this first version I give the grid the dimensions of classic tic-tac-toe, 3x3. In later versions it will be refactored for a dynamic grid size.
