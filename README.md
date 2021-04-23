@@ -22,7 +22,7 @@ To refer to a position of the grid, we'll use an array containing the row and co
 
 
 ## Gameplay
-
+https://www.youtube.com/embed/eVet1PSzNnk
 
 ## Example Code
 ```Ruby
