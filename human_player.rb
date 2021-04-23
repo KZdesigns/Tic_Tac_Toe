@@ -34,5 +34,4 @@ class Human_Player
         raise 'sorry, that was invalid :(' if pos.length != 2
         pos
     end
-
 end

@@ -62,5 +62,4 @@ class Game
 
         puts "Cats game!"
     end
-
 end

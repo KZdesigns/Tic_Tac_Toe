@@ -99,6 +99,5 @@ class Board
 
     def empty_positions?
         @grid.any? { |row| row.any?("_") }
-    end
-  
+    end  
 end

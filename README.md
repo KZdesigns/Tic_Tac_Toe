@@ -1,6 +1,6 @@
 # Tic_Tac_Toe
 Creating a Tic-Tac-Toe game, uisng the ruby programing langauge. I will be building this game out in three interations
-- [ ] Version 1 - Basic 3x3 grid game with 2 human players
+- [x] Version 1 - Basic 3x3 grid game with 2 human players
 - [ ] Version 2 - Dynamic sized grid with 2 or more human players
 - [ ] Version 3 - Dynamic sized grid with 2 or more human or computer players
 
@@ -40,7 +40,6 @@ end
 ```
 ## Preview
 Version 1: 
-![tic-tac-toe-gif](/images/Animated GIF-downsized_large.gif)
 ![tic-tac-toe-gif](https://media.giphy.com/media/CglKKzymX4Pm7aJvwE/giphy.gif)
 
 ## Tech Used
