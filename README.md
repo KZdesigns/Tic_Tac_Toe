@@ -25,8 +25,19 @@ To refer to a position of the grid, we'll use an array containing the row and co
 
 
 ## Example Code
+```Ruby
+def win_diagonal?(mark)
+    left = []
+    right = []
 
+    (0...@grid.length).each do |i|
+        left << @grid[i][i]
+        right << @grid[i][-i - 1]
+    end
 
+    left.uniq == [mark] && left.uniq.length == 1 || right.uniq == [mark] && right.uniq.length == 1
+end
+```
 ## Learning
 
 
