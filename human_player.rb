@@ -2,7 +2,7 @@
 # The HumanPlayer class is responsible for holding information about the user and prompting them to enter a position for gameplay.
 
 
-class Human_player
+class Human_Player
 
     attr_reader :mark 
 
