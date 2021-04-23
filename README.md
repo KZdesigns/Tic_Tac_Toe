@@ -21,8 +21,8 @@ Programmatically, I will use a 2-dimensional array to present the grid. Players 
 To refer to a position of the grid, we'll use an array containing the row and column indices. For example, the position of the first row, second column would be ```[0, 1]```; this is the location of a ```:O```.
 
 
-## Gameplay
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eVet1PSzNnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Gameplay - Video
+Version 1: https://www.youtube.com/embed/eVet1PSzNnk
 
 ## Example Code
 ```Ruby
@@ -38,8 +38,9 @@ def win_diagonal?(mark)
     left.uniq == [mark] && left.uniq.length == 1 || right.uniq == [mark] && right.uniq.length == 1
 end
 ```
-## Learning
-
+## Preview
+Version 1: 
+![tic-tac-toe-gif](/images/Animated GIF-downsized_large.gif)
 
 ## Tech Used
 - Ruby 3.0
