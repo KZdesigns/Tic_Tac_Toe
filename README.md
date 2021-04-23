@@ -41,6 +41,7 @@ end
 ## Preview
 Version 1: 
 ![tic-tac-toe-gif](/images/Animated GIF-downsized_large.gif)
+![tic-tac-toe-gif](https://media.giphy.com/media/CglKKzymX4Pm7aJvwE/giphy.gif)
 
 ## Tech Used
 - Ruby 3.0
