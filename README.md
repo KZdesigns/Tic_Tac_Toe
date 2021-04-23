@@ -39,7 +39,7 @@ def win_diagonal?(mark)
 end
 ```
 ## Preview
-Version 1: 
+### Version 1: 
 ![tic-tac-toe-gif](https://media.giphy.com/media/CglKKzymX4Pm7aJvwE/giphy.gif)
 
 ## Tech Used
