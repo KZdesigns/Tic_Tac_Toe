@@ -33,7 +33,7 @@ class Board
     # This method should return a boolean indicating whether or not the specified position does not contain a player's mark.
 
     def empty?(position)
-    self[position] == "_"
+        self[position] == "_"
     end
 
     # Board#place_mark(position, mark)
@@ -100,6 +100,5 @@ class Board
     def empty_positions?
         @grid.any? { |row| row.any?("_") }
     end
-
-    
+  
 end
