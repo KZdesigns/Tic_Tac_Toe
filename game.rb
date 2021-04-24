@@ -10,11 +10,10 @@ class Game
     # You should also initialize an instance variable to contain the current player. 
     # By default, player one should begin as the current player.
 
-    def initialize(player_1_mark, player_2_mark)
-        @player_1 = Human_Player.new(player_1_mark)
-        @player_2 = Human_Player.new(player_2_mark)
-        @current_player = @player_1
-        @board = Board.new
+    def initialize(n, *marks)
+        @players = marks.map { |mark| Human_Player.new(mark) }
+        @current_player = @players.first
+        @board = Board.new(n)
     end
 
     # Game#switch_turn
@@ -22,11 +21,7 @@ class Game
     # Calling this method repeatedly should switch the current player back and forth between the two players.
 
     def switch_turn
-        if @current_player == @player_1
-            @current_player = @player_2
-        else
-            @current_player = @player_1
-        end
+        @current_player = @players.rotate!.first
     end
 
     # Game#play
@@ -54,6 +49,7 @@ class Game
             @board.place_mark(pos, @current_player.mark)
             if @board.win?(@current_player.mark)
                 puts "victory! player #{@current_player.mark} you win!"
+                @board.print
                 return
             else
                 switch_turn
