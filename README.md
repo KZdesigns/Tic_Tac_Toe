@@ -22,8 +22,8 @@ To refer to a position of the grid, we'll use an array containing the row and co
 
 
 ## Gameplay - Video
-Version 1: https://www.youtube.com/embed/eVet1PSzNnk
-Version 2: https://www.youtube.com/embed/G0E3zNG14eM
+- Version 1: https://www.youtube.com/embed/eVet1PSzNnk
+- Version 2: https://www.youtube.com/embed/G0E3zNG14eM
 
 ## Example Code
 ```Ruby
