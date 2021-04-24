@@ -1,7 +1,7 @@
 # Tic_Tac_Toe
 Creating a Tic-Tac-Toe game, uisng the ruby programing langauge. I will be building this game out in three interations
 - [x] Version 1 - Basic 3x3 grid game with 2 human players
-- [ ] Version 2 - Dynamic sized grid with 2 or more human players
+- [x] Version 2 - Dynamic sized grid with 2 or more human players
 - [ ] Version 3 - Dynamic sized grid with 2 or more human or computer players
 
 ![tic-tac-toe-image](/images/tic-tac-toe-image.jpg)
@@ -23,6 +23,7 @@ To refer to a position of the grid, we'll use an array containing the row and co
 
 ## Gameplay - Video
 Version 1: https://www.youtube.com/embed/eVet1PSzNnk
+Version 2: https://www.youtube.com/embed/G0E3zNG14eM
 
 ## Example Code
 ```Ruby
@@ -41,6 +42,9 @@ end
 ## Preview
 ### Version 1: 
 ![tic-tac-toe-gif](https://media.giphy.com/media/CglKKzymX4Pm7aJvwE/giphy.gif)
+### Version 2:
+![tic-tac-toe-V2-gif](https://media.giphy.com/media/9aUTmjA7mmWalw23d1/giphy.gif)
+
 
 ## Tech Used
 - Ruby 3.0
