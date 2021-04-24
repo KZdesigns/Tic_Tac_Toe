@@ -3,7 +3,6 @@
 
 
 class Human_Player
-
     attr_reader :mark 
 
     # HumanPlayer#initialize(mark_value)

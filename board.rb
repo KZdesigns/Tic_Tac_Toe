@@ -3,7 +3,6 @@
 # For simplicity, give the grid the dimensions of classic tic-tac-toe, 3x3.
 
 class Board
-
     def initialize(n)
         @grid = Array.new(n) { Array.new(n, '_') }
     end

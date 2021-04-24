@@ -3,7 +3,6 @@ require './human_player.rb'
 require './computer_player.rb'
 
 class Game
-
     # Game#initialize(player_1_mark, player_2_mark)
     # An instance of Game should have instance variables for player one, player two, and the board. 
     # Design the #initialize method to accept the mark values to be used for the players.
