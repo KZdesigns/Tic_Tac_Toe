@@ -1,6 +1,5 @@
 class Computer_Player
     attr_reader :mark
-
     def initialize(val)
         @mark = val
     end
