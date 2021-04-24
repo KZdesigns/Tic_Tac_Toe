@@ -1,5 +1,6 @@
 require './board.rb'
 require './human_player.rb'
+require './computer_player.rb'
 
 class Game
 
@@ -10,8 +11,11 @@ class Game
     # You should also initialize an instance variable to contain the current player. 
     # By default, player one should begin as the current player.
 
-    def initialize(n, *marks)
-        @players = marks.map { |mark| Human_Player.new(mark) }
+    def initialize(n, players)
+        @players = players.map do |mark, is_computer|
+            is_computer ? Computer_Player.new(mark) : Human_Player.new(mark)
+        end
+
         @current_player = @players.first
         @board = Board.new(n)
     end
@@ -42,10 +46,10 @@ class Game
     # If any errors are raised during gameplay, your game loop and #play method will end immediately, so you'll have to start a new game and retry!
 
     def play
-
         while @board.empty_positions?
             @board.print
-            pos = @current_player.get_position
+            choices = @board.legal_positions
+            pos = @current_player.get_position(choices)
             @board.place_mark(pos, @current_player.mark)
             if @board.win?(@current_player.mark)
                 puts "victory! player #{@current_player.mark} you win!"

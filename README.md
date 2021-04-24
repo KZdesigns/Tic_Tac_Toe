@@ -24,19 +24,25 @@ To refer to a position of the grid, we'll use an array containing the row and co
 ## Gameplay - Video
 - Version 1: https://www.youtube.com/embed/eVet1PSzNnk
 - Version 2: https://www.youtube.com/embed/G0E3zNG14eM
+- Version 3: https://www.youtube.com/embed/jaHyeKysIKU
 
 ## Example Code
 ```Ruby
-def win_diagonal?(mark)
-    left = []
-    right = []
-
-    (0...@grid.length).each do |i|
-        left << @grid[i][i]
-        right << @grid[i][-i - 1]
+def play
+    while @board.empty_positions?
+        @board.print
+        choices = @board.legal_positions
+        pos = @current_player.get_position(choices)
+        @board.place_mark(pos, @current_player.mark)
+        if @board.win?(@current_player.mark)
+            puts "victory! player #{@current_player.mark} you win!"
+            @board.print
+            return
+        else
+            switch_turn
+        end
     end
-
-    left.uniq == [mark] && left.uniq.length == 1 || right.uniq == [mark] && right.uniq.length == 1
+    puts "Cats game!"
 end
 ```
 ## Preview
@@ -44,7 +50,8 @@ end
 ![tic-tac-toe-gif](https://media.giphy.com/media/CglKKzymX4Pm7aJvwE/giphy.gif)
 ### Version 2:
 ![tic-tac-toe-V2-gif](https://media.giphy.com/media/9aUTmjA7mmWalw23d1/giphy.gif)
-
+### Version 3: 
+![tic-tac-toe-V3-gif](https://media.giphy.com/media/LH01FUnyqsTvYV0Cdq/giphy.gif)
 
 ## Tech Used
 - Ruby 3.0
